@@ -123,7 +123,7 @@
             groupBox2.Controls.Add(button1);
             groupBox2.Controls.Add(textBox2);
             groupBox2.Font = new Font("Segoe UI", 10F);
-            groupBox2.Location = new Point(45, 255);
+            groupBox2.Location = new Point(45, 251);
             groupBox2.Name = "groupBox2";
             groupBox2.Size = new Size(402, 143);
             groupBox2.TabIndex = 2;
