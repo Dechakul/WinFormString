@@ -129,7 +129,7 @@
             Controls.Add(label1);
             Controls.Add(btnSplitName);
             Name = "Form1";
-            Text = "Form1";
+            Text = "29.แยกชื่อ";
             ResumeLayout(false);
             PerformLayout();
         }
