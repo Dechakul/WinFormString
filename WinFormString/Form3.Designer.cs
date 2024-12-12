@@ -40,7 +40,7 @@
             label4 = new Label();
             textBox1 = new TextBox();
             button1 = new Button();
-            txt = new TextBox();
+            txtaa = new TextBox();
             groupBox1.SuspendLayout();
             groupBox2.SuspendLayout();
             SuspendLayout();
@@ -121,7 +121,7 @@
             groupBox2.Controls.Add(label4);
             groupBox2.Controls.Add(textBox1);
             groupBox2.Controls.Add(button1);
-            groupBox2.Controls.Add(txt);
+            groupBox2.Controls.Add(txtaa);
             groupBox2.Font = new Font("Segoe UI", 10F);
             groupBox2.Location = new Point(45, 251);
             groupBox2.Name = "groupBox2";
@@ -164,12 +164,12 @@
             button1.Text = "คำนวณ";
             button1.UseVisualStyleBackColor = true;
             // 
-            // txt
+            // txtaa
             // 
-            txt.Location = new Point(113, 38);
-            txt.Name = "txt";
-            txt.Size = new Size(127, 25);
-            txt.TabIndex = 1;
+            txtaa.Location = new Point(113, 38);
+            txtaa.Name = "txtaa";
+            txtaa.Size = new Size(127, 25);
+            txtaa.TabIndex = 1;
             // 
             // Form3
             // 
@@ -202,6 +202,6 @@
         private Label label4;
         private TextBox textBox1;
         private Button button1;
-        private TextBox txt;
+        private TextBox txtaa;
     }
 }
