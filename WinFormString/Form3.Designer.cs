@@ -38,9 +38,9 @@
             groupBox2 = new GroupBox();
             label3 = new Label();
             label4 = new Label();
-            textBox1 = new TextBox();
-            button1 = new Button();
-            txtaaaa = new TextBox();
+            txtTime = new TextBox();
+            btnCalculate = new Button();
+            txtSpeed = new TextBox();
             groupBox1.SuspendLayout();
             groupBox2.SuspendLayout();
             SuspendLayout();
@@ -119,57 +119,58 @@
             groupBox2.BackColor = SystemColors.GradientInactiveCaption;
             groupBox2.Controls.Add(label3);
             groupBox2.Controls.Add(label4);
-            groupBox2.Controls.Add(textBox1);
-            groupBox2.Controls.Add(button1);
-            groupBox2.Controls.Add(txtaaaa);
+            groupBox2.Controls.Add(txtTime);
+            groupBox2.Controls.Add(btnCalculate);
+            groupBox2.Controls.Add(txtSpeed);
             groupBox2.Font = new Font("Segoe UI", 10F);
             groupBox2.Location = new Point(45, 251);
             groupBox2.Name = "groupBox2";
             groupBox2.Size = new Size(402, 143);
             groupBox2.TabIndex = 2;
             groupBox2.TabStop = false;
-            groupBox2.Text = "สูตรที่1 คำนวณพื้นที่สี่เหลี่ยมผืนผ้า";
+            groupBox2.Text = "สูตรที่2 คำนวณระยะทาง";
             // 
             // label3
             // 
             label3.AutoSize = true;
             label3.Location = new Point(20, 96);
             label3.Name = "label3";
-            label3.Size = new Size(62, 19);
+            label3.Size = new Size(76, 19);
             label3.TabIndex = 5;
-            label3.Text = "ความกว้าง";
+            label3.Text = "เวลา (ชั่วโมง)";
             // 
             // label4
             // 
             label4.AutoSize = true;
-            label4.Location = new Point(20, 41);
+            label4.Location = new Point(0, 41);
             label4.Name = "label4";
-            label4.Size = new Size(50, 19);
+            label4.Size = new Size(111, 19);
             label4.TabIndex = 4;
-            label4.Text = "ความสูง";
+            label4.Text = "ความเร็ว (ก.ม./ชม.)";
             // 
-            // textBox1
+            // txtTime
             // 
-            textBox1.Location = new Point(113, 93);
-            textBox1.Name = "textBox1";
-            textBox1.Size = new Size(127, 25);
-            textBox1.TabIndex = 3;
+            txtTime.Location = new Point(113, 93);
+            txtTime.Name = "txtTime";
+            txtTime.Size = new Size(127, 25);
+            txtTime.TabIndex = 3;
             // 
-            // button1
+            // btnCalculate
             // 
-            button1.Location = new Point(283, 54);
-            button1.Name = "button1";
-            button1.Size = new Size(88, 46);
-            button1.TabIndex = 2;
-            button1.Text = "คำนวณ";
-            button1.UseVisualStyleBackColor = true;
+            btnCalculate.Location = new Point(283, 54);
+            btnCalculate.Name = "btnCalculate";
+            btnCalculate.Size = new Size(88, 46);
+            btnCalculate.TabIndex = 2;
+            btnCalculate.Text = "คำนวณ";
+            btnCalculate.UseVisualStyleBackColor = true;
+            btnCalculate.Click += btnCalculate_Click;
             // 
-            // txtaaaa
+            // txtSpeed
             // 
-            txtaaaa.Location = new Point(113, 38);
-            txtaaaa.Name = "txtaaaa";
-            txtaaaa.Size = new Size(127, 25);
-            txtaaaa.TabIndex = 1;
+            txtSpeed.Location = new Point(113, 38);
+            txtSpeed.Name = "txtSpeed";
+            txtSpeed.Size = new Size(127, 25);
+            txtSpeed.TabIndex = 1;
             // 
             // Form3
             // 
@@ -180,7 +181,7 @@
             Controls.Add(lblResult);
             Controls.Add(groupBox1);
             Name = "Form3";
-            Text = "Form3";
+            Text = "30.สูตรคณิต";
             groupBox1.ResumeLayout(false);
             groupBox1.PerformLayout();
             groupBox2.ResumeLayout(false);
@@ -200,8 +201,8 @@
         private GroupBox groupBox2;
         private Label label3;
         private Label label4;
-        private TextBox textBox1;
-        private Button button1;
-        private TextBox txtaaaa;
+        private TextBox txtTime;
+        private Button btnCalculate;
+        private TextBox txtSpeed;
     }
 }

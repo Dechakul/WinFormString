@@ -36,11 +36,41 @@ namespace WinFormString
                 MessageBox.Show("กรุณาใส่ตัวเลขและใส่ข้อมูลให้ครบ", "เกิดข้อผิดพลาด", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
-        
+
         private double CalculateRectangleArea(double width, double height)
         {
             return width * height;
         }
 
-    }
+        private void btnCalculate_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                // อ่านค่าจาก TextBox
+                double speed = double.Parse(txtSpeed.Text);
+                double time = double.Parse(txtTime.Text);
+
+                // คำนวณระยะทาง
+                double distance = CalculateDistance(speed, time);
+
+                // แสดงผลลัพธ์
+                lblResult.Text = "ระยะทาง: " + distance + " กิโลเมตร";
+            }
+            catch (FormatException)
+            {
+                MessageBox.Show("กรุณากรอกตัวเลขที่ถูกต้อง!", "ข้อผิดพลาด", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
+
+        /// <summary>
+        /// ฟังก์ชันคำนวณระยะทาง
+        /// </summary>
+        /// <param name="speed">ความเร็ว</param>
+        /// <param name="time">เวลา</param>
+        /// <returns>ระยะทาง</returns>
+        private double CalculateDistance(double speed, double time)
+        {
+            return speed * time;
+        }
+    }    
 }
